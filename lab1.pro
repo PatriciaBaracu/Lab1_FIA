@@ -89,7 +89,7 @@ skin_color( Val ):- has(skin_color, Val).
 has_limbs( Val):- has(has_limbs, Val).
 religion( Val ):- has(religion, Val).
 nr_of_fingers( Val ):- has(nr_of_fingers, Val).
-has_tentacles( Val ):- has(nr_of_fingers, Val).
+has_tentacles( Val ):- has(nr_of_tentacles, Val).
 
 
 has(Atr,Val):-
@@ -113,9 +113,9 @@ saveResponse( Atr, LVal ):-
 
 
 menuAsk( Atr, InputVal ):-
-    nl, write( "Type the guest's " ), 
+    nl, write( "Write down the guest's " ), 
     write( Atr ),
-    write( " value! " ),
+    write( " ?" ),
     showMenu( Atr ), nl,
 	read( Input ),
     processInput( Input, ProcessedInput ),
