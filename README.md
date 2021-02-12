@@ -7,7 +7,7 @@ An expert system that describes types of tourists that visit Luna-City and colle
 at least 5 tourist types and the criteria by which they can be distinguished from Loonies
 and between themselves (i.e. clothes, accent, gait, height and opinion on politics).
 
-Technologies
+Technologies<br/>
 Prolog 
 
 How to run the program?
