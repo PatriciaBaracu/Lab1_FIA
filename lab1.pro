@@ -67,7 +67,7 @@ guest(loonie):-
     ),
      has_tentacles(yes),
   religion(tenguriism),
-     nr_of_fingers(three_finger).
+     nr_of_fingers(three_fingers).
 
 
 
@@ -89,7 +89,7 @@ skin_color( Val ):- has(skin_color, Val).
 has_limbs( Val):- has(has_limbs, Val).
 religion( Val ):- has(religion, Val).
 nr_of_fingers( Val ):- has(nr_of_fingers, Val).
-has_tentacles( Val ):- has(nr_of_tentacles, Val).
+has_tentacles( Val ):- has(has_tentacles, Val).
 
 
 has(Atr,Val):-
@@ -199,6 +199,11 @@ showMenuList( [H|T] ):-
 
 characteristics(british__planet_earth, religion_christianity_and_skin_color_light_beige).
 characteristics(algerian__planet_earth , religion_islam_and_skin_color_bronze ).
+characteristics(bolivian__planet_earth,religion_roman_catholic_and_skin_color_expresso ).
+characteristics(indian__planet_earth,religion_hinduism_and_skin_color_deep_golden ).
+characteristics( chinese__planet_earth,religion_buddhism_and_skin_color_warm_beige).
+characteristics(loonie,skin_color_dark_blue_aqua_yellow_red_purple_and_has_tentacles_and_religion_tenguriism_and_three_fingers ).
+characteristics(space_guards__selenian_satellite,skin_color_silver_and_has_wings_and_has_handgun_and_religion_ashurism_and_six_fingers ).
 
 choose_category:-
 write("Whose characteristics do you wish to know?"),
